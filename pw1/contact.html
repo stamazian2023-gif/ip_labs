@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти — Global Adventures Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1><span role="img" aria-label="Конверт">✉️</span> Зв'яжіться з нами</h1>
+        <p>Маєте запитання, пропозиції щодо нових маршрутів чи просто хочете поділитися своїми враженнями? Напишіть нам!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="kyiv.html">Київ</a></li>
+            <li><a href="tokyo.html">Токіо</a></li>
+            <li><a href="rome.html">Рим</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            
+            <form action="#" method="post">
+                <div>
+                    <label for="user-name">Ваше ім'я:</label>
+                    <input type="text" id="user-name" name="name" placeholder="Олександр" required>
+                </div>
+
+                <div>
+                    <label for="user-email">Електронна пошта:</label>
+                    <input type="email" id="user-email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div>
+                    <label for="subject">Тема повідомлення:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Співпраця / Запитання" required>
+                </div>
+
+                <div>
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Напишіть ваш текст тут..." required></textarea>
+                </div>
+
+                <button type="submit">Надіслати повідомлення</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul class="social-links">
+                <li><a href="#">Faceblock</a></li>
+                <li><a href="#">Tweety</a></li>
+                <li><a href="#">Instadrama</a></li>
+            </ul>
+            <p>© 2035 Global Adventures Blog.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
