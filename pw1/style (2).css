@@ -1,0 +1,153 @@
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    font-family: 'Palatino Linotype', sans-serif;
+}
+
+/* Body and Layout */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #6E2437;
+    background-color: #F3EBDD;
+}
+
+/* Header */
+header {
+    background: #6E2437;
+    color: #F3EBDD;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+/* Navigation Bar */
+nav ul {
+    background: #6E2437;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #F3EBDD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section and Articles */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Gallery Section */
+#photo-gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photo-gallery li {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background: #F3EBDD;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#photo-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+#photo-gallery figcaption {
+    padding: 15px;
+    text-align: center;
+    font-style: Palatino Linotype;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #F3EBDD;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #6E2437;
+}
+
+form button {
+    display: inline-block;
+    background: #6E2437;
+    color: #F3EBDD;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #6E2437;
+}
+
+/* Footer */
+footer {
+    background: #6E2437;
+    color: #F3EBDD;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #F3EBDD;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #F3EBDD;
+    /* Add additional styles for social media icons if using images or font icons */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #F3EBDD;
+    text-decoration: underline; /* Consider removing underline if using buttons for CTA */
+}
