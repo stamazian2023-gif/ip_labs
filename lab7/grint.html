@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7 - Блок новин</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        
+        .site-header {
+            background-color: #1e3a8a;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .site-header .logo {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .site-header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .site-header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .site-header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .main-container h2 {
+            text-align: center;
+            color: #0284c7;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #0284c7;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .title-wrapper {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+       
+        .news-grid {
+            display: grid;
+            gap: 20px;
+           
+            grid-template-columns: 1fr;
+        }
+
+       
+        .news-card {
+            background-color: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .news-date {
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: #64748b;
+            padding: 3px 8px;
+            display: inline-block;
+            margin-bottom: 10px;
+            width: fit-content;
+            border-radius: 2px;
+        }
+
+        .news-title {
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #0284c7;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+
+        .news-title:hover {
+            color: #0369a1;
+        }
+
+        
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    
+        @media (min-width: 1024px) {
+            .news-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header class="site-header" id="events_container">
+        <div class="logo">Львівська політехніка</div>
+        <nav>
+            <a href="../index.html">Головна</a>
+            <a href="#">Новини</a>
+            <a href="#">Події</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </header>
+
+    
+    <main class="main-container">
+        <div class="title-wrapper">
+            <h2>Новини університету</h2>
+        </div>
+
+        <div class="news-grid">
+        
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 1">
+                <div class="news-content">
+                    <span class="news-date">25 ЛЮТ. 2026, 09:30</span>
+                    <a href="#" class="news-title">Студентка ІМФН Софія Гладун про участь у зимовій школі ICMU...</a>
+                </div>
+            </article>
+
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 2">
+                <div class="news-content">
+                    <span class="news-date">24 ЛЮТ. 2026, 17:10</span>
+                    <a href="#" class="news-title">Лекція-презентація «Життя і проєкти архітектора Олександра Вартересевича»...</a>
+                </div>
+            </article>
+
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 3">
+                <div class="news-content">
+                    <span class="news-date">24 ЛЮТ. 2026, 14:38</span>
+                    <a href="#" class="news-title">У Львівській політехніці — фотовиставка «Андрій Парубій веде нас в бій»...</a>
+                </div>
+            </article>
+
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 4">
+                <div class="news-content">
+                    <span class="news-date">24 ЛЮТ. 2026, 11:26</span>
+                    <a href="#" class="news-title">Центр гуманітарної допомоги Львівської політехніки передав авто...</a>
+                </div>
+            </article>
+
+            
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 5">
+                <div class="news-content">
+                    <span class="news-date">24 ЛЮТ. 2026, 09:09</span>
+                    <a href="#" class="news-title">Науковці НДЛ-26 створюють матеріали майбутнього для доріг України...</a>
+                </div>
+            </article>
+
+           
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 6">
+                <div class="news-content">
+                    <span class="news-date">23 ЛЮТ. 2026, 17:07</span>
+                    <a href="#" class="news-title">Затверджено календарний план II туру олімпіади для школярів...</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 7">
+                <div class="news-content">
+                    <span class="news-date">23 ЛЮТ. 2026, 15:12</span>
+                    <a href="#" class="news-title">В Університеті відбулася міжнародна конференція TCSET-2026...</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://via.placeholder.com/300x180" alt="Новина 8">
+                <div class="news-content">
+                    <span class="news-date">23 ЛЮТ. 2026, 12:13</span>
+                    <a href="#" class="news-title">Людина з фотокамерою: відбувся вечір пам'яті Ярослава Данила...</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+</body>
+
+</html>
