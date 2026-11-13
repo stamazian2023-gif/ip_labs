@@ -6,32 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid Layout Level 2 Example</title>
     <style>
-        /* Встановлюємо контейнер з класом "parent" як grid-контейнер з
-фіксованими шириною та висотою. Задаємо розподіл колонок та рядків, а також
-відступи між ними */
+ 
         .parent {
             width: 100%;
-            /* Займає всю ширину сторінки */
+        
             height: 800px;
-            /* Фіксована висота */
+          
             display: grid;
-            /* Включаємо режим сітки */
+         
             grid-template-columns: 1fr 2fr repeat(3, 1fr);
-            /* Визначаємо
-ширини колонок */
+    
             grid-template-rows: repeat(3, 1fr) 2fr 1fr;
-            /* Визначаємо
-висоти рядків */
+     
             grid-column-gap: 10px;
-            /* Відстань між колонками */
+      
             grid-row-gap: 20px;
-            /* Відстань між рядками */
+         
         }
 
-        /* Кожен із div елементів має свої координати в сітці, визначені
-через grid-area.
-Наприклад, "1 / 1 / 2 / 3" означає початок в 1 рядку, 1 колонці
-і закінчення у 2 рядку, 3 колонці */
 
         .div1 {
             grid-area: 1 / 1 / 2 / 3;

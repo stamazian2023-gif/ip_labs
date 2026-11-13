@@ -9,18 +9,16 @@
         .container {
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
-            /* Три колонки з різними
-відношеннями розмірів */
+         
             grid-template-rows: 100px 200px 100px;
-            /* Три ряди з фіксованою
-висотою */
+  
             gap: 10px;
-            /* Відстань між елементами сітки */
+        
             grid-template-areas:
                 "header header header"
                 "sidebar content content"
                 "footer footer footer";
-            /* Іменовані області для елементів */
+           
         }
 
         .header {
@@ -44,14 +42,10 @@
 
         }
 
-        /* Стилі для дочірньої сітки з використанням субгрида */
         .content-grid {
             display: grid;
             grid-template-columns: subgrid;
-            /* Наслідує колонки батьківської сітки
-*/
-            grid-template-rows: 1fr 1fr;
-            /* Власні рядки */
+       
             gap: 5px;
             background-color: white;
         }
