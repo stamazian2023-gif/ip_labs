@@ -3,65 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Trivia</title>
+    <title>World Trivia — Online Quiz Club</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <nav aria-label="Main navigation">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#trivia">Trivia</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#scores">Scores</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trivia">Trivia</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#scores">Scores</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-    
-        <section id="home">
-            <h1>Welcome to World Trivia</h1>
-            <p>Test your knowledge across dozens of fascinating topics, compete with players worldwide, and climb to the top of our daily leaderboard.</p>
+    <main class="container">
+        <section id="home" class="card">
+            <h1>World Trivia</h1>
+            <p>Weekly online quizzes for people who enjoy facts, maps, and history. Pick a topic below, answer 15 timed questions, and see where you land on this week's board.</p>
         </section>
 
-     
-        <section id="trivia">
-            <h2>Featured Trivia</h2>
+        <section id="trivia" class="card">
+            <h2>This Week's Quizzes</h2>
             
-            <div class="trivia-item">
-                <img src="images/science.jpg" alt="Laboratory flasks representing science trivia">
+            <article class="trivia-item">
+                <img src="images/javier-miranda-nUsBA0isRyY-unsplash.jpg" alt="Gas giant planet Jupiter with moons in deep space">
                 <div>
-                    <h3>Space & Science</h3>
-                    <p>Did you know that a day on Venus is longer than a year on Venus? Explore more mind-blowing facts about the universe.</p>
+                    <h3>Solar System &amp; Orbital Mechanics</h3>
+                    <p>15 questions covering planetary atmospheres, Apollo missions, and deep-space probes. Average completion time: 4 minutes.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="trivia-item">
-                <img src="images/history.jpg" alt="Ancient columns representing world history">
+            <article class="trivia-item">
+                <img src="images/darryl-low-e1mSmviBa0E-unsplash.jpg" alt="Ancient Greek stone columns of the Parthenon">
                 <div>
-                    <h3>World History</h3>
-                    <p>Test your knowledge of ancient civilizations, famous empires, and pivotal moments that shaped our modern world.</p>
+                    <h3>20th Century Turning Points</h3>
+                    <p>From early aviation to the fall of the Berlin Wall — check how well you remember dates, treaties, and key figures.</p>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <section id="categories">
+        <section id="categories" class="card">
             <h2>Categories</h2>
             <ul class="categories-list">
-                <li><a href="#science">Science & Nature</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#geography">Geography</a></li>
-                <li><a href="#movies">Movies & TV</a></li>
-                <li><a href="#sports">Sports</a></li>
+                <li><a href="#trivia">Science &amp; Space (42)</a></li>
+                <li><a href="#trivia">World History (38)</a></li>
+                <li><a href="#trivia">Geography &amp; Flags (51)</a></li>
+                <li><a href="#trivia">Cinema &amp; Music (29)</a></li>
+                <li><a href="#trivia">Literature (19)</a></li>
             </ul>
         </section>
 
-        <section id="scores">
-            <h2>Top Scores</h2>
+        <section id="scores" class="card">
+            <h2>Weekly Leaderboard</h2>
             <table class="scores-table">
                 <thead>
                     <tr>
@@ -76,63 +76,71 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Olena Kovalenko</td>
-                        <td>980</td>
+                        <td>Marta Kovalchuk</td>
+                        <td>1450</td>
                         <td>Ukraine</td>
-                        <td>Science & Nature</td>
-                        <td>2025-05-10</td>
+                        <td>Geography &amp; Flags</td>
+                        <td>2026-11-15</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Liam O'Connor</td>
-                        <td>945</td>
-                        <td>Ireland</td>
-                        <td>History</td>
-                        <td>2025-05-11</td>
+                        <td>Henrik Lindqvist</td>
+                        <td>1390</td>
+                        <td>Sweden</td>
+                        <td>World History</td>
+                        <td>2026-11-16</td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Taras Shevchenko</td>
-                        <td>910</td>
+                        <td>Danylo Melnyk</td>
+                        <td>1340</td>
                         <td>Ukraine</td>
-                        <td>Geography</td>
-                        <td>2025-05-12</td>
+                        <td>Science &amp; Space</td>
+                        <td>2026-11-16</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Claire Moreau</td>
+                        <td>1280</td>
+                        <td>France</td>
+                        <td>Cinema &amp; Music</td>
+                        <td>2026-11-17</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="subscribe">
-            <h2>Daily Challenge</h2>
-            <p>Never miss a brain teaser! Get a brand-new riddle delivered every morning.</p>
+        <section id="subscribe" class="card subscribe-box">
+            <h2>Puzzle of the Day</h2>
+            <p>One short logic or geography question sent every morning at 08:00 UTC. No spam, unsubscribe anytime.</p>
             <button type="button" class="subscribe-btn" aria-label="Subscribe to Puzzle of the Day">
                 Puzzle of the Day
             </button>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have a question or want to suggest a trivia category? Send us a message below.</p>
+        <section id="contact" class="card">
+            <h2>Suggest a Question</h2>
+            <p>Spotted an error in a quiz or want to submit your own set of questions? Drop us a note.</p>
             
             <form class="contact-form" action="#" method="post">
-                <label for="user-name">Name:</label>
-                <input type="text" id="user-name" name="name" required>
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="name" placeholder="e.g. Andrii" required>
 
-                <label for="user-email">Email:</label>
-                <input type="email" id="user-email" name="email" required>
+                <label for="user-email">Email Address</label>
+                <input type="email" id="user-email" name="email" placeholder="name@example.com" required>
 
-                <label for="user-message">Message:</label>
-                <textarea id="user-message" name="message" rows="4" required></textarea>
+                <label for="user-message">Message or Question Idea</label>
+                <textarea id="user-message" name="message" rows="4" placeholder="Write your question and the correct answer..." required></textarea>
 
                 <button type="submit" class="submit-btn">
-                    Send Message <span class="sr-only">to World Trivia support</span>
+                    Send Message <span class="sr-only">to World Trivia editors</span>
                 </button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 World Trivia. All rights reserved.</p>
+        <p>&copy; 2026 World Trivia Club &middot; Built for Internet Programming Lab #3</p>
     </footer>
 
 </body>
