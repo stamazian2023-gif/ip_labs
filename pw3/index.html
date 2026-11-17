@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trivia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trivia">Trivia</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <section id="home">
+            <h1>Welcome to World Trivia</h1>
+            <p>Test your knowledge across dozens of fascinating topics, compete with players worldwide, and climb to the top of our daily leaderboard.</p>
+        </section>
+
+     
+        <section id="trivia">
+            <h2>Featured Trivia</h2>
+            
+            <div class="trivia-item">
+                <img src="images/science.jpg" alt="Laboratory flasks representing science trivia">
+                <div>
+                    <h3>Space & Science</h3>
+                    <p>Did you know that a day on Venus is longer than a year on Venus? Explore more mind-blowing facts about the universe.</p>
+                </div>
+            </div>
+
+            <div class="trivia-item">
+                <img src="images/history.jpg" alt="Ancient columns representing world history">
+                <div>
+                    <h3>World History</h3>
+                    <p>Test your knowledge of ancient civilizations, famous empires, and pivotal moments that shaped our modern world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul class="categories-list">
+                <li><a href="#science">Science & Nature</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#geography">Geography</a></li>
+                <li><a href="#movies">Movies & TV</a></li>
+                <li><a href="#sports">Sports</a></li>
+            </ul>
+        </section>
+
+        <section id="scores">
+            <h2>Top Scores</h2>
+            <table class="scores-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Country</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Olena Kovalenko</td>
+                        <td>980</td>
+                        <td>Ukraine</td>
+                        <td>Science & Nature</td>
+                        <td>2025-05-10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Liam O'Connor</td>
+                        <td>945</td>
+                        <td>Ireland</td>
+                        <td>History</td>
+                        <td>2025-05-11</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Taras Shevchenko</td>
+                        <td>910</td>
+                        <td>Ukraine</td>
+                        <td>Geography</td>
+                        <td>2025-05-12</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="subscribe">
+            <h2>Daily Challenge</h2>
+            <p>Never miss a brain teaser! Get a brand-new riddle delivered every morning.</p>
+            <button type="button" class="subscribe-btn" aria-label="Subscribe to Puzzle of the Day">
+                Puzzle of the Day
+            </button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to suggest a trivia category? Send us a message below.</p>
+            
+            <form class="contact-form" action="#" method="post">
+                <label for="user-name">Name:</label>
+                <input type="text" id="user-name" name="name" required>
+
+                <label for="user-email">Email:</label>
+                <input type="email" id="user-email" name="email" required>
+
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Send Message <span class="sr-only">to World Trivia support</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 World Trivia. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
