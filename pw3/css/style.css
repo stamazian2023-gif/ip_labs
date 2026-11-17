@@ -31,8 +31,7 @@ body {
 }
 
 header {
-    background-color: #facc15;
-    border-bottom: 3px solid #ca8a04;
+    background-color: #333;
 }
 
 .nav-list {
@@ -49,7 +48,7 @@ header {
 }
 
 .nav-list a {
-    color: #1f2937;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
